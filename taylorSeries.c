@@ -21,6 +21,12 @@ void main()
 }
 
 /*
+
+e^x = 1 + x/1 + x^2/2! + x^3/3! + ....... + x^n/n! for upto n terms
+    = e^x for (n-1) terms + x^n/n! 
+    = e^x for (n-2) terms + x^(n-1)/(n-1)! +  x^n/n!
+    = until 0 terms are left 
+
 OUTPUT FOR taylorSeriesRecursive(5.0, 4.0) => e^5 upto 4 terms
 
 e^0 => 1
